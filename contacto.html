@@ -1,78 +1,117 @@
+<!-- CONTACTO -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contactos: Comunicate con Red Puente Comunitario! </title>
-    <style>
-        body {
-            font-size: 20px;
-        }
-    </style>
+    <title>Contactos: Comunicate con Red Puente Comunitario!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
-    <h1>Contactos</h1>
-    <h2>Comunicate con Red Puente Comunitario! </h2>
+        <h1>Contactos</h1>
+        <h2>Comunicate con Red Puente Comunitario!</h2>
     </header>
 
     <nav>
-      <ul>
-         <li><a href="index.html">Inicio</a></li>
-         <li><a href="nosotros.html">Nosotros</a></li>
-         <li><a href="programas.html">Programas</a></li>
-         <li><a href="contacto.html">Contacto</a></li> 
-      </ul>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
 
-<main>
+    <main>
 
-<section>
-    <h2>Información de contacto</h2>
-    <p><strong>Dirección:</strong> Calle Yrigoyen 1431, Buenos Aires</p>
-    <p>
-        <strong>Teléfono:</strong>
-        <a href="tel:+541172345678">+54 11 7234-5678</a>
-    </p>
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:contacto@redpuente.org">contacto@redpuente.org</a>
-    </p>
-    <p><strong>Horario:</strong> Lunes a Viernes de 9 a 18 hs</p>
-</section>
+        <section>
+            <h2>Información de contacto</h2>
+            <p><strong>Dirección:</strong> Calle Yrigoyen 1431, Buenos Aires</p>
 
-<aside>
-<img src="https://www.centroalianza.cl/img/redes-de-apoyo/red-apoyo-reducida-necesidad-1.jpg" 
-alt="Apoyemonos entre todos">
-</aside>
+            <p>
+                <strong>Teléfono:</strong>
+                <a href="tel:+541172345678">+54 11 7234-5678</a>
+            </p>
 
-<section>
-<h3>¿Querés participar?</h3>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:contacto@redpuente.org">contacto@redpuente.org</a>
+            </p>
 
-<p>
-Si querés colaborar con nuestras acciones, sumarte como voluntario o necesitás ayuda,
-no dudes en acercarte o comunicarte con nosotros
-</p>
-</section>
+            <p><strong>Horario:</strong> Lunes a Viernes de 9 a 18 hs</p>
+        </section>
 
-<aside>
-<img src="https://i.pinimg.com/736x/a3/4b/89/a34b8903b8fc52b997c119306560c22f.jpg" width="500" height="300"
-alt="Solidaridad">
-</aside>
+        <aside>
+            <img src="https://www.centroalianza.cl/img/redes-de-apoyo/red-apoyo-reducida-necesidad-1.jpg"
+                alt="Apoyémonos entre todos">
+        </aside>
 
-</main>
+        <section>
+            <h3>¿Querés participar?</h3>
+            <p>
+                Si querés colaborar con nuestras acciones, sumarte como voluntario o necesitás ayuda,
+                no dudes en acercarte o comunicarte con nosotros.
+            </p>
+        </section>
 
-<footer>
+        <aside>
+            <img src="https://i.pinimg.com/736x/a3/4b/89/a34b8903b8fc52b997c119306560c22f.jpg"
+                width="500" height="300"
+                alt="Solidaridad">
+        </aside>
 
-<p><strong>Red Puente Comunitario</strong></p>
+        <section>
+            <h2>Formulario de contacto</h2>
 
-<p> <small> Construyendo oportunidades en cada comunidad </small> </p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-<p> <small> Última actualización: 22/04/2026 </small> </p>
+                <br><br>
 
-</footer>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="programa">Programa</label>
+                <select name="programa" id="programa" required>
+                    <option value="">Elegir...</option>
+                    <option value="acompanar">Acompañar</option>
+                    <option value="mesa_compartida">Mesa compartida</option>
+                    <option value="conectados">Conectados</option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Red Puente Comunitario</strong></p>
+        <p><small>Construyendo oportunidades en cada comunidad</small></p>
+        <p><small>Última actualización: 17/05/2026</small></p>
+    </footer>
 
 </body>
+
 </html>
 
