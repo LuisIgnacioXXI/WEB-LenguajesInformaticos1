@@ -151,32 +151,38 @@ figcaption {
 
 #equipo {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  align-items: left;
 }
 
 article.miembro {
   background-color: white;
 
-  padding: 15px;
+  padding: 5px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
 }
 
-#equipo h3 {
-  color: rgb(10, 10, 10);
-
-  margin-bottom: 5px;
+article.miembro h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin-bottom: 10px;
 }
 
 article.miembro p {
   color: rgb(10, 10, 10);
   font-size: 0.9rem;
+  margin: 0;
 }
-
 
 form {
   background-color: yellow;
@@ -193,7 +199,7 @@ form input {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid black;
-  font-family: Roboto, sans-serif; 
+  font-family: Roboto, sans-serif;
   font-size: 16px;
 }
 
@@ -244,7 +250,7 @@ form button:hover {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card h6 {
@@ -271,10 +277,23 @@ form button:hover {
   font-weight: bold;
 }
 
+/* ========= Nosotros ========== */
+.linea-divisoria {
+  border: none;
+  height: 2px;
+  background-color: #111111;
+  margin: 20px 0;
+}
+aside dl {
+  margin: 1em 0;
+}
 
+aside dt {
+  font-weight: bold;
+  color: #111111;
+}
 
-
-
-
-
-
+aside dd {
+  margin: 0 0 0.5em 1em;
+  color: #333333;
+}
