@@ -219,6 +219,12 @@ form button:hover {
   margin-bottom: 10px;
 }
 
+.card h5 {
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+
+
 /* ==========================
    Bootstrap - personalización
 ========================== */
