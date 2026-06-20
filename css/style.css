@@ -1,8 +1,8 @@
 /* Variables de colores de la ONG */
 :root {
-  --color-primario: #028090;
-  /*--color-secundario: #05668d;*/
-  --color-secundario: #378d05;
+  --color-primario: #027584;
+  /*--color-secundario: #67b13b;*/
+  --color-secundario: #67b13b;
   --color-acento: #f0a500;
   --color-fondo: #f7f9fa;
   --color-texto: #1a1a1a;
@@ -145,45 +145,6 @@ figcaption {
   color: #555;
 }
 
-/* ==========================
-    Sección Equipo
-   ========================== */
-
-#equipo {
-  background-color: white;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  text-align: left;
-  align-items: left;
-}
-
-article.miembro {
-  background-color: white;
-
-  padding: 5px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  width: 100%;
-  max-width: 400px;
-}
-
-article.miembro h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--color-primario);
-  margin-bottom: 10px;
-}
-
-article.miembro p {
-  color: rgb(10, 10, 10);
-  font-size: 0.9rem;
-  margin: 0;
-}
-
 form {
   background-color: yellow;
   padding: 15px;
@@ -277,7 +238,9 @@ form button:hover {
   font-weight: bold;
 }
 
-/* ========= Nosotros ========== */
+/* ========================== 
+        Nosotros 
+============================= */
 .linea-divisoria {
   border: none;
   height: 2px;
@@ -297,3 +260,82 @@ aside dd {
   margin: 0 0 0.5em 1em;
   color: #333333;
 }
+/* ==========================
+    Sección Equipo
+   ========================== */
+
+#equipo {
+  padding: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* activa Flexbox en el contenedor del equipo */
+  flex-wrap: wrap; /* permite que los miembros se envuelvan a la siguiente línea si no caben en una sola fila */
+  flex-direction: column; /* para apilar los miembros verticalmente */
+  gap: 10px; /* espacio entre miembros */
+  justify-content: center;
+  text-align: left; /* para alinear el texto a la izquierda */
+  align-items: stretch; /* para que los miembros ocupen todo el ancho disponible */
+}
+
+article.miembro {
+  background-color: white;
+  flex: 1 1 auto; /* ocupa todo el espacio disponible */
+  padding: 10px; /* espacio interno */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%; /* para que ocupe todo el ancho del contenedor */
+  max-width: none; /* para evitar restricciones de ancho */
+}
+
+article.miembro h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+article.miembro p {
+  color: rgb(10, 10, 10);
+  font-size: 0.9rem;
+  margin: 0;
+}
+nav ul {
+  display: flex; /* activa Flexbox en el contenedor de navegación */
+  list-style: none;
+  justify-content: center;
+  gap: 20px; /* espacio entre ítems */
+}
+
+footer i {
+  margin-right: 8px;
+  color: red; /* usa tu color al icono */
+}
+
+/* ==========================
+    Sección Hero --Quienes somos?
+   ========================== */
+#hero {
+  position: relative;
+  width: 100%;
+}
+
+#hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 170px; /* coloca el texto a la mitad de la imagen en vertical */
+  left: 10px; /* coloca el texto a la mitad de la imagen en horizontal */
+
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center; /* centra el texto dentro del contenedor */
+}
+
+/* ==========================
+  
+   ========================== */
