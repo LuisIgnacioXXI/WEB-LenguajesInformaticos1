@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos: Comunicate con Red Puente Comunitario!</title>
+    <title>Red Puente Comunitario - Contactos</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +67,44 @@
 
 <!-- CONTENIDO PRINCIPAL -->
 <main class="container my-4">
+  
+  <!-- FORMULARIO -->
+  <section id="seccionFormulario"class="my-4">
+
+    <h2>Formulario de contacto</h2>
+    <form id="formContacto" >
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" id="formNombre" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" id="formEmail" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Programa</label>
+        <select id="formPrograma" class="form-select">
+          <option value="">Elegir...</option>
+          <option value="acompanar">Acompañar</option>
+          <option value="mesaCompartida">Mesa compartida</option>
+          <option value="conectados">Conectados</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea id="formMensaje" class="form-control" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Enviar
+      </button>
+
+    </form>
+
+  </section>
 
   <!-- BLOQUE 1 -->
   <div class="row">
@@ -116,45 +154,7 @@
 
   </div>
 
-  <!-- FORMULARIO -->
-  <section class="my-4">
-
-    <h2>Formulario de contacto</h2>
-
-    <form>
-
-      <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input type="text" class="form-control">
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control">
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label">Programa</label>
-        <select class="form-select">
-          <option>Elegir...</option>
-          <option>Acompañar</option>
-          <option>Mesa compartida</option>
-          <option>Conectados</option>
-        </select>
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label">Mensaje</label>
-        <textarea class="form-control" rows="4"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary">
-        Enviar
-      </button>
-
-    </form>
-
-  </section>
+  
 
 </main>
 
