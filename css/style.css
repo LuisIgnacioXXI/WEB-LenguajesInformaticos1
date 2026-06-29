@@ -145,8 +145,13 @@ figcaption {
   color: #555;
 }
 
+.contacto-imagen img {
+    max-height: 200px;
+    width: 100%
+}
+
 form {
-  background-color: yellow;
+  background-color: var(--color-fondo);
   padding: 15px;
   margin: 15px 0;
 }
